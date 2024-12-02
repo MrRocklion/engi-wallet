@@ -2,13 +2,12 @@
 import React from 'react'
 import {
     HomeIcon,
-    ChartBarIcon,
-    UserGroupIcon,
-    ClipboardDocumentListIcon,
+    BuildingLibraryIcon,
     Cog6ToothIcon,
-    InformationCircleIcon,
-    ChatBubbleBottomCenterTextIcon,
-    SparklesIcon
+    SparklesIcon,
+    BanknotesIcon,
+    ShoppingBagIcon,
+    ArrowsRightLeftIcon
   } from '@heroicons/react/24/outline'
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
@@ -22,35 +21,31 @@ export default function SideBar(){
           href: '/',
         },
         {
-          label: 'Analiticas',
-          icon: ChartBarIcon,
-          href: '/analytics',
+          label: 'Gastos',
+          icon: ShoppingBagIcon,
+          href: '/expensives',
         },
         {
-          label: 'Clients',
-          icon: UserGroupIcon,
+          label: 'Ingresos',
+          icon: BanknotesIcon,
+          href: '/incomings',
+        },
+        {
+          label: 'Movimientos',
+          icon: ArrowsRightLeftIcon,
           href: '/clients',
         },
         {
-          label: 'Reportes',
-          icon: ClipboardDocumentListIcon,
-          href: '/reports',
+          label: 'Bancos',
+          icon: BuildingLibraryIcon,
+          href: '/analytics',
         },
         {
           label: 'Settings',
           icon: Cog6ToothIcon,
           href: '/settings',
         },
-        {
-          label: 'About',
-          icon: InformationCircleIcon,
-          href: '/about',
-        },
-        {
-          label: 'Feedback',
-          icon: ChatBubbleBottomCenterTextIcon,
-          href: '/feedback',
-        },
+      
       ]
 
     return(<>
