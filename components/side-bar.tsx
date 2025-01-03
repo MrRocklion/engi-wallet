@@ -33,12 +33,12 @@ export default function SideBar(){
         {
           label: 'Movimientos',
           icon: ArrowsRightLeftIcon,
-          href: '/clients',
+          href: '/movements',
         },
         {
           label: 'Bancos',
           icon: BuildingLibraryIcon,
-          href: '/analytics',
+          href: '/banks',
         },
         {
           label: 'Settings',
