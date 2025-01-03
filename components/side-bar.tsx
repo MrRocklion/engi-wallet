@@ -31,11 +31,6 @@ export default function SideBar(){
           href: '/incomings',
         },
         {
-          label: 'Movimientos',
-          icon: ArrowsRightLeftIcon,
-          href: '/movements',
-        },
-        {
           label: 'Bancos',
           icon: BuildingLibraryIcon,
           href: '/banks',

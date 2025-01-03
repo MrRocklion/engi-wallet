@@ -46,3 +46,23 @@ export const getFormattedTime = () => {
   
     return `${hours}:${minutes}:${seconds}`;
   };
+
+
+  interface BankData {
+    description: string;
+    number: string;
+    name: string;
+    code: number;
+    mount: string;
+    id:string;
+}
+
+
+export const getHighestCode = (arr: BankData[]): number | 0 => {
+    if (arr.length === 0) {
+      return 1;
+    }else{
+        const target =  arr.reduce((max: BankData, obj: BankData) => (obj.code > max.code ? obj : max), arr[0])
+        return target.code + 1
+    }
+  };
